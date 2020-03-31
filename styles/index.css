@@ -62,3 +62,68 @@ a:visited {
 /* Jorge */
 
 /* Franco */
+
+.views {
+  width: 100%;
+  padding-top: 1vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.views a {
+  line-height: 0px;
+}
+
+.views a:visited {
+  line-height: 0px;
+}
+
+.views li {
+  list-style: none;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+  row-gap: 0.1vw;
+  column-gap: 0.1vw;
+}
+
+.photos li {
+  width: 31.7vw;
+  height: 31.7vw;
+  list-style: none;
+}
+.photos li a {
+  width: 100%;
+  height: 100%;
+}
+.photos li img {
+  width: 100%;
+}
+
+footer nav ul {
+  padding: 0px;
+  list-style: none;
+  grid-template-rows: auto auto auto;
+  text-align: center;
+}
+footer nav ul li {
+  display: inline;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #003569;
+  justify-content: center;
+}
+
+footer nav ul li a:hover {
+  background: #f8f8f8;
+  border: 1px solid #a6a6a6;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
