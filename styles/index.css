@@ -59,6 +59,40 @@ a:visited {
   align-items: center;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container > footer {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.container > footer a {
+  color: #003569;
+  font-size: 12px !important;
+  line-height: 18px !important;
+}
+
+.container > footer ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.container > footer li {
+  margin: 7px 16px;
+}
+
+.copyright {
+  color: #999999;
+}
+
 /* Jorge */
 
 /* Franco */
