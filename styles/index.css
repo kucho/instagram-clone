@@ -60,5 +60,163 @@ a:visited {
 }
 
 /* Jorge */
+.button{
+  background: #3897f0;
+  color: #ffffff !important;
+  border-radius: 4px;
+  padding: 6px 10px;
+  text-align: center; 
+}
+.search {
+  display: none;
+}
+.profile {
+  padding: 24px 16px 0;
+}
+.profile-header{
+  display: grid;
+  grid: auto-flow / 77px 1fr;
+  grid-column-gap: 28px;
+  /* grid-row-gap: 24px 10px; */
+  grid-template-areas: 
+    "profile-pic profile-info"
+    "profile-desc profile-desc"
+    "profile-stories profile-stories"
+    "records records"
+  ;
+}
+.profile-pic {
+  background: #ffffff;
+  width: 77px;
+  border-radius: 100%;
+  grid-area: profile-pic;
+  margin-bottom: 24px;
+}
+.profile-desc{
+  font-size: 14px;
+  line-height: 20px;
+  grid-area: profile-desc;
+  margin-bottom: 26px;
+}
+.username{
+  font-size: 26px;
+  line-height: 32px ;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+.profile-name{
+  display: inline;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: normal;
+  margin: 0;
+}
+.profile-link{
+  /* display: inline-block; */
+  color: #003569 !important;
+}
 
+.profile-stories {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: scroll;
+  grid-area: profile-stories;
+  display: grid;
+  grid: 1fr / auto-flow;
+  grid-column-gap: 19px;
+  list-style-type: none;
+  scrollbar-width: none;
+  margin-bottom: 21px;
+}
+.profile-stories-name {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #262626;
+}
+.profile-stories-item {
+  text-align: center;
+  width: 72px
+}
+.profile-stories-img {
+  display: inline-block;
+  width: 100%;
+  /* height: 56px; */
+}
+.records{
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 -16px;
+  padding: 12px 0;
+  grid-area: records;
+}
+.records-link{
+  color: #262626 !important;
+  display: block;
+  font-size: 14px;
+}
+.records-type{
+  color: #999999;
+}
+.records-item{
+  text-align: center;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 950px ){
+  .profile-header{
+    grid: auto-flow / 150px 400px 1fr;
+    grid-column-gap: 101px;
+    grid-template-areas: 
+    "profile-pic profile-info ."
+    "profile-pic records ."
+    "profile-pic profile-desc ."
+    "profile-stories profile-stories profile-stories";
+  }
+  .profile-pic{
+    width: 150px;
+  }
+  .profile-info{
+    display: flex;
+    align-items: flex-start;
+  }
+  .username{
+    margin-right: 55px;
+  }
+  .profile-name{
+    font-size: 16px;
+  }
+  .profile-desc{
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .profile-link{
+    font-size: 16px;
+  }
+  .profile-stories-item{
+    width: 81px;
+  }
+  .profile-stories-name{
+    font-size: 14px;
+  }
+  .records{
+    margin: 0;
+    border:none;
+    justify-content: space-between;
+  }
+  .records-item{
+    font-size: 16px;
+  }
+  .records-link{
+    display: inline;
+  }
+  .records-type{
+    color: inherit;
+  }
+}
 /* Franco */
